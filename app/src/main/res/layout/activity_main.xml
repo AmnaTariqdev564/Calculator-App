@@ -1,0 +1,93 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_butterfly"
+        tools:context=".MainActivity">
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculator"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/soft_pink"
+            android:fontFamily="@font/poppins_bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" />
+
+        <!-- Edit Text for 1st Input -->
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Enter first number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@color/soft_gray"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <!-- Edit Text for 2nd Input -->
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Enter second number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@color/soft_gray"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/num1"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <!-- Result Display -->
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_result"
+            android:padding="10dp"
+            android:text="Result"
+            android:textColor="@color/dark_purple"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/num2"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            app:layout_constraintTop_toBottomOf="@id/result"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <!-- Add remaining buttons styled similarly -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
