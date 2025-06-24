@@ -36,8 +36,7 @@ CalculatorApp/
 ```
 
 ## 📷 Screenshots
-
-
+![Image](https://github.com/AmnaTariqdev564/Calculator-App/blob/031917c70e8ca6d567c0b4b5dd24ff27873db2ca/image.jpg)
 
 ## 📦 Installation
 
